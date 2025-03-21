@@ -15,7 +15,7 @@ test('testA', async ({browser, page})=> {
     
 });
 
-test.only('testB', async({page})=>{
+test('testB', async({page})=>{
      await page.goto("https://www.pcgarage.ro/notebook-laptop/")
      await page.locator("li#filters_advanced_link").click();
      await page.locator("li#filters_adv_man61").click();
@@ -28,3 +28,8 @@ test.only('testB', async({page})=>{
     page.pause()
 })
 
+test('testC', async({page})=>{
+    
+
+
+})
