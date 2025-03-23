@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test')
 
-test('testA', async ({browser, page})=> {
+test.only('testA', async ({browser, page})=> {
     const list = ["Facebook", "Google", "Apple"]
     
     const window = await browser.newContext();
