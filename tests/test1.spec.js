@@ -29,12 +29,15 @@ test('testB', async({page})=>{
 })
 
 test.only('testC', async({page})=>{
-    await page.goto("https://www.pcgarage.ro/ultrabook/")  
-
+    await page.goto("https://www.pcgarage.ro/ultrabook/filtre/procesor-frecventa-2500-pana-la-2999/memorie-capacitate-16/")  
+ 
     const products = page.locator("div[class=\"product_box_middle\"]")
-    //console.log(await products.count())
-    for (let i =0 ; i<products.length; i++){
-        console.log(await products.nth(i))    
-        console.log(await products.nth(i).locator(" div:nth-child(2)").isVisible())
+    const count = await products.count()
+    for (let i =0 ; i < count; i++){
+           
+        //console.log(await products.nth(i).locator(" [class='product_box_name'] a").textContent())       
+        //.product_box_specs_container ul:first-child
+        console.log(await products.nth(i).locator(" [class=\"product_box_specs\"] li:nth-child(4)").textContent())
+        console.log("--------")
     }
 })
