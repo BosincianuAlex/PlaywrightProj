@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test')
 
-test.only('testA', async ({browser, page})=> {
+test('testA', async ({browser, page})=> {
     const list = ["Facebook", "Google", "Apple"]
     
     const window = await browser.newContext();
@@ -28,8 +28,13 @@ test('testB', async({page})=>{
     page.pause()
 })
 
-test('testC', async({page})=>{
-    
+test.only('testC', async({page})=>{
+    await page.goto("https://www.pcgarage.ro/ultrabook/")  
 
-
+    const products = page.locator("div[class=\"product_box_middle\"]")
+    //console.log(await products.count())
+    for (let i =0 ; i<products.length; i++){
+        console.log(await products.nth(i))    
+        console.log(await products.nth(i).locator(" div:nth-child(2)").isVisible())
+    }
 })

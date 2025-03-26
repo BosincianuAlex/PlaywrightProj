@@ -9,7 +9,7 @@ export default defineConfig({
   use: 
     {
       name: 'chromium',
-      trace :'retain-on-failure'
+      //trace :'retain-on-failure'
     },
   
 });
