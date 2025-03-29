@@ -1,5 +1,12 @@
 const {test,expect} = require('@playwright/test')
 
+const url = "<Your URL>";
+const userAgent =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36";
+
+test.describe("with user agent", () => {
+    test.use({userAgent});
+
 test('testA', async ({browser, page})=> {
     const list = ["Facebook", "Google", "Apple"]
     
@@ -44,13 +51,14 @@ test.only('testC', async({page})=>{
 
         //elements.forEach(element => console.log(element.trim()===list[elements.indexOf(element)]))  
 
-        expect(products.nth(i).locator("li:has-text(\"Capacitate:\")")).toHaveText(" Capacitate: 16 GB ")
+        await expect(products.nth(i).locator("li:has-text(\"Capacitate:\")")).toHaveText(" Capacitate: 16 GB ")
         console.log("--------")
 
-
+        
     }
 
 })
 
 // dinamyc search bar sugestion test, through .pressSequantilly() method
 test('testD', async({page})=>{})
+})
