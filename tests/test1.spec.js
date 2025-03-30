@@ -1,4 +1,4 @@
-const {test,expect} = require('@playwright/test')
+const {test,expect,request} = require('@playwright/test')
 
 const url = "https://www.pcgarage.ro/";
 const userAgent =
@@ -63,7 +63,7 @@ test("testE", async({page})=>{
     
 })
 // hover pop up test
-test.only('testD', async({page})=>{
+test('testD', async({page})=>{
     await page.goto(url)
     const elements = page.locator("#top_menu li");
     const count = await elements.count()    
@@ -72,6 +72,19 @@ test.only('testD', async({page})=>{
         await elements.nth(i).hover()
         expect(await elements.nth(i).locator("[id*='subcats_']").isVisible()).toBeTruthy()        
         }   
+
+})
+
+test.only("testF", async({page})=>{
+    const apiContext = await request.newContext()
+    
+    
+    const response = await apiContext.get("https://jsonplaceholder.typicode.com/posts",
+    {
+        
+    })    
+    console.log(response.status())
+    expect(response.ok()).toBeTruthy()
 
 })
 })
