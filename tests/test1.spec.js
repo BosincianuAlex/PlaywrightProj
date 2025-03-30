@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test')
 
-const url = "<Your URL>";
+const url = "https://www.pcgarage.ro/";
 const userAgent =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36";
 
@@ -20,8 +20,7 @@ test('testA', async ({browser, page})=> {
     const elements = await page.locator("form[name*=\"social_init_\"]").allTextContents();
     elements.forEach(element => console.log(element.trim()===list[elements.indexOf(element)]))    
     
-});
-
+})
 test('testB', async({page})=>{
      await page.goto("https://www.pcgarage.ro/notebook-laptop/")
      await page.locator("li#filters_advanced_link").click();
@@ -34,10 +33,7 @@ test('testB', async({page})=>{
 
     page.pause()
 })
-
-
-
-test.only('testC', async({page})=>{
+test('testC', async({page})=>{
     await page.goto("https://www.pcgarage.ro/ultrabook/filtre/procesor-frecventa-2500-pana-la-2999/memorie-capacitate-16/")  
  
     const products = page.locator("div[class=\"product_box_middle\"]")
@@ -56,9 +52,27 @@ test.only('testC', async({page})=>{
 
         
     }
+})
+// test pop up
+test("testE", async({page})=>{
+    await page.goto(url)
+    page.on("dialog", async dialog => {        
+        expect(dialog.message()).toBe("Int rodu in campul de cautare denumirea sau codul produsului cautat")
+        dialog.accept();})
+    await page.locator("button[id=\"sf2\"]").click()  
+    
+})
+// hover pop up test
+test.only('testD', async({page})=>{
+    await page.goto(url)
+    const elements = page.locator("#top_menu li");
+    const count = await elements.count()    
+         
+    for ( let i=0; i < count; i++){
+        await elements.nth(i).hover()
+        expect(await elements.nth(i).locator("[id*='subcats_']").isVisible()).toBeTruthy()        
+        }   
 
 })
-
-// dinamyc search bar sugestion test, through .pressSequantilly() method
-test('testD', async({page})=>{})
 })
+
