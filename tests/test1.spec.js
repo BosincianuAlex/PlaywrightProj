@@ -1,5 +1,5 @@
 const {test,expect,request} = require('@playwright/test')
-const {Locators} = require('./Locators.js')
+const {POManager} = require('./POManager.js')
 
 
 const url = "https://www.pcgarage.ro/";
@@ -21,10 +21,10 @@ test.describe("with user agent", () => {
         
     })
     test.only('testC', async({page})=>{
-        const locator = new Locators(page)
+        const locators = new POManager(page)
         await page.goto("https://www.pcgarage.ro/ultrabook/filtre/procesor-frecventa-2500-pana-la-2999/memorie-capacitate-16/")  
     
-        const products = locator.products
+        const products = locators.MainPage.products
         const count = await products.count()
         for (let i =0 ; i < count; i++){
             
