@@ -1,4 +1,5 @@
-class FilterPage{
+class Filter{
+
     constructor(page){
         this.memoryFilter= page.locator("div[data-filter-id=\"7886\"]")
     }
@@ -9,4 +10,4 @@ class FilterPage{
     }
 }
 
-module.exports = {FilterPage}
+module.exports = {Filter}
