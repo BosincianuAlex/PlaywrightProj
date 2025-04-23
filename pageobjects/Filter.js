@@ -5,8 +5,8 @@ class Filter{
     }
 
     
-    setFilter(filterValue){
-        this.memoryFilter.locator(`a[data-name=\"${filterValue}\"]`).click();
+    async setFilter(filterValue){
+       await this.memoryFilter.locator(`a[data-name=\"${filterValue}\"]`).click();
     }
 }
 

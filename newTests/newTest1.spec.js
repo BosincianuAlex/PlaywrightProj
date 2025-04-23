@@ -12,17 +12,16 @@ for(const data of dataset){
         await MainPage.searchBar.fill(`${data.product}`)
         await MainPage.searchButton.click()            
 
-        await MainPage.listGridButton.click()
-        //await page.waitForSelector("#card_grid") 
-        await page.pause()
-        
-        await page.waitForLoadState('domcontentloaded')
+        await Filter.setFilter(data.memory)         
+            
+        await page.waitForTimeout(1000)        
+          
+        await MainPage.listGridButton.click()  
 
-        Filter.setFilter(data.memory) 
+        const items = await Catalogue.getItems()       
+        console.log( items.length )   
+        console.log( items )
 
-        console.log(await Catalogue.getItemsCount())
-        console.log(await Catalogue.getItems())
-
-        await page.pause()
+        //await page.pause()
 
     })}

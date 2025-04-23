@@ -9,16 +9,14 @@ class Catalogue{
     }
     async getItems() {
         const count = await this.getItemsCount()
-        for(let i = 0 ; i < count; i++){
-            console.log(i)
-            const item = await this.items.nth(i).locator(".product-specs-label:has-text(\"Capacitate memorie: \")").textContent()
-            return item
+        let items = []
+        for(let i = 0 ; i < 5; i++){
             
+            items.push( await this.items.nth(i).locator("h2 a").textContent())                    
 
-    }
+        }
+        return items
     }
 }
-
-
 
 module.exports = {Catalogue}
