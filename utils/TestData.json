@@ -2,6 +2,10 @@
     {
         "product" : "laptop",
         "memory" : "4 GB"
+    },
+    {
+        "product" : "laptop1",
+        "memory" : "6 - 8 GB"
     }
 
 ]
