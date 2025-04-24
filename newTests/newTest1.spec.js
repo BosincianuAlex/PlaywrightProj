@@ -17,10 +17,15 @@ for(const data of dataset){
         await page.waitForTimeout(1000)        
           
         await MainPage.listGridButton.click()  
-
+        
+        await page.waitForTimeout(2000)
+        
         const items = await Catalogue.getItems()       
         console.log( items.length )   
         console.log( items )
+
+            
+        
 
         //await page.pause()
 

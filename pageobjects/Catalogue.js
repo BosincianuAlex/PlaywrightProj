@@ -1,7 +1,7 @@
 class Catalogue{
 
     constructor(page) {
-        this.items = page.locator(".card-item")
+        this.items = page.locator(".card-item:has(.row)")
     }
 
     async getItemsCount() {
@@ -9,12 +9,13 @@ class Catalogue{
     }
     async getItems() {
         const count = await this.getItemsCount()
+        
         let items = []
-        for(let i = 0 ; i < 5; i++){
-            
-            items.push( await this.items.nth(i).locator("h2 a").textContent())                    
-
-        }
+        for(let i = 0 ; i < count; i++){            
+            //console.log(await this.items.nth(i).locator(".card-v2-title").textContent()) 
+            //console.log(await this.items.nth(i).locator('p:has-text(\"Capacitate memorie: \")').textContent())
+            items.push( await this.items.nth(i).locator('p:has-text(\"Capacitate memorie: \")').textContent())                
+        }        
         return items
     }
 }
