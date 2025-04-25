@@ -7,7 +7,7 @@ class Catalogue{
     async getItemsCount() {
         return await this.items.count()
     }
-    async getItems() {
+    async getItemsSpec() {
         const count = await this.getItemsCount()
         
         let items = []

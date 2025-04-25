@@ -1,7 +1,7 @@
 class Filter{
 
     constructor(page){
-        this.memoryFilter= page.locator("div[data-filter-id=\"7886\"]")
+        this.memoryFilter= page.locator(".filter:has-text(\"Capacitate\")")
     }
 
     
