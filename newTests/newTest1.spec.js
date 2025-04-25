@@ -10,7 +10,7 @@ test.beforeEach(async({page})=>{
     
 })
 
-test.describe("Filter test ", async(page) => {
+test.describe("Filter test ", async() => {
     for(const data of dataset){
         test(`with ${data.product}`, async({page})=>{
             const {MainPage, Filter, Catalogue} = new POManager(page)            
