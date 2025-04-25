@@ -20,13 +20,15 @@ for(const data of dataset){
         
         await page.waitForTimeout(1000)
         
-        const items = await Catalogue.getItems()       
-          
-        console.log( items )
-        console.log( items.length ) 
-            
+        const count = await Catalogue.getItemsCount()
         
+        let items = []
+        for(let i = 0 ; i < count; i++){            
+                       
+            let value= await Catalogue.items.nth(i).locator('p:has-text(\"memorie: \")').textContent()  
+            value = value.replace("Capacitate memorie:  ", "")
+            expect(value, "at: " + await Catalogue.items.nth(i).locator(".card-v2-title").textContent()).toBe(data.memory)
 
-        //await page.pause()
+        }      
 
     })}
