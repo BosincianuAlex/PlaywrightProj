@@ -4,9 +4,8 @@ const dataset = JSON.parse(JSON.stringify(require("../utils/TestData.json")))
 
 const url = "https:/www.emag.ro/";
 
-
 test.beforeEach(async({page})=>{
-    await page.goto(url)
+    await page.goto(url)   
     
 })
 
@@ -25,7 +24,7 @@ test.describe("Filter test ", async() => {
             
             const count = await Catalogue.getItemsCount()
             
-            let items = []
+            
             for(let i = 0 ; i < count; i++){            
                         
                 let value= await Catalogue.items.nth(i).locator('p:has-text(\"Capacitate memorie: \")').textContent()  
@@ -35,4 +34,9 @@ test.describe("Filter test ", async() => {
             }    
         })
     }
-})    
+})
+
+
+
+
+
