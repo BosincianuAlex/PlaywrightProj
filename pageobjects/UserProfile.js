@@ -3,7 +3,7 @@ class UserProfile{
         this.userBar = page.locator(".account-sidebar-user-content")
         this.userMenu = page.locator(".user-account-menu-box")
 
-        this.orders = this.userBar.locator(".feature-icon-order_history")
+        this.ordersButton = this.userBar.locator(".feature-icon-order_history")
 
     }
 }

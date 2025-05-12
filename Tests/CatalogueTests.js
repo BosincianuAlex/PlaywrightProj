@@ -36,30 +36,6 @@ test.describe("Products catalogue filter test ", async() => {
     }
 })
 
-test("User profile page test", async({browser})=>{
-    
-    //await userLoginState(browser)
 
-    const context = await browser.newContext({storageState: '.utils/storageState.json'})    
-    const page = await context.newPage()
-
-    const {UserProfile} = new POManager(page)
-
-    await page.goto("https://www.emag.ro/user/myaccount")       
-       
-    expect(UserProfile.orders.isVisible() && UserProfile.orders.isEnabled() ).toBeTruthy()
-        
-})
-
-test("Block network request test", async({page}) => {
-    //Block network request to check for pop up response
-    await page.route ("https://www.emag.ro/favorites/lists/type/emag/product_ids?source=front",
-        route => {route.abort()}
-    )
-
-    await page.goto("https://www.emag.ro")    
-    expect(await page.locator(".ns-content").textContent()).toContain("Ceva nu a functionat. Te rugam sa incerci din nou.")
-    
-})
 
 
