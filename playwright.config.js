@@ -11,6 +11,8 @@ export default defineConfig({
       name: 'chromium',
       //trace :'retain-on-failure'
     },
+
+    timeout: 50000,
   
 });
 

@@ -1,0 +1,522 @@
+{
+  "cookies": [
+    {
+      "name": "EMAGVISITOR",
+      "value": "a%3A1%3A%7Bs%3A7%3A%22user_id%22%3Bs%3A19%3A%222513069725047939554%22%3B%7D",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540537.539782,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ltuid",
+      "value": "1746980525.7225-7ca8daaa75743b3f35f49ebe510280b9ab98aa2c",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540525.838252,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AID",
+      "value": "a6b351f70a11aae73c9a53da587e5d6b2bc2c71a7fe0fb5a295a31663d31ab4a",
+      "domain": "auth.emag.ro",
+      "path": "/",
+      "expires": 1746997200,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "ko4zpxpIgFVeqy_aNplLNFTlaZreYeivIqujEiR9VIs-1746980525-1.0.1.1-PJE7bSJydhyKWVkjKpYFpva7pEmSvDpMJg88i8qGkIEfUSPuRZrtdN0Yqi9jk7WchrM7dearKqiK17pQ_J6SV0vFZ4hDCwdF0zLKqeAt7QE",
+      "domain": ".hcaptcha.com",
+      "path": "/",
+      "expires": 1746982325.962085,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "PHPSESSID",
+      "value": "283e9469a66baf4f489dfe3c06ed25bb",
+      "domain": "auth.emag.ro",
+      "path": "/",
+      "expires": 1747002136.937699,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth_state_validation",
+      "value": "448e6005c81bc4757271d6555cec83c7d1eb461bcbb3de3de73a9b4ff32d4190",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1746982337.0803,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_remember",
+      "value": "%DB%11b%C5dy%B9%BA%A4%928%CA%A9%3D%EClY%5Bqc%25%FB%D0%FD%9F%26_qt%B8O%E9%2FM%D9%F0%7Dm.%AAUg%C6%9F%DFW%2A%3C%8EXS%10%10%85%29%60%01%E1%EF4%03%A3%16g%9E%FE%01%3B4Us%BDz%EC%EF%A2%E1%C4%3F%1E%93%8CO%EFFs%F0%E9d%B4%A3%06%E6L%0EW%EC%E5%A5%24%A5%D5%DB%A06D%20%EB%21%B7%F7%17~%8E%EA%29%8E%03%BA3%20%ED%08b%83%1D%8Av%90%FBAQ%0F%5D%95%CE%B9%E6%A1%C6%A4%B3%0Ey%91%EAO%B4%D1%F5%FB%81%94%5Dn%7C%99%60%95%D6%A9%8Aq%0D-%EE%E4%60",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539732,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "pdr_user_id",
+      "value": "af7ae2354790a6a870abeb14e7086e71",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539742,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_token",
+      "value": "5bc20d318146efd26a62bf236e90a336",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539749,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "customer_has_orders",
+      "value": "1",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539771,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EMAG_CUSTOMER",
+      "value": "1734335",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539776,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EMAGROSESSID",
+      "value": "dgosjavbkpajq0mp1opnkd3fio",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1747002138.84163,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth-token",
+      "value": "eyJ0eXAiOiJKV1QiLCJraWQiOiIxNzA4MzcwMzc0IiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJlTUFHIEF1dGgiLCJhdWQiOiJlTUFHIiwiZXhwIjoxNzQ4MTkwMTM3LCJuYmYiOjE3NDY5ODA0NzcsInNjb3BlIjoib3BlbmlkIHVzZXI6aW5mbyB1c2VyOnNlY3VyaXR5IiwiZGlkIjoiIiwicnQiOiI3OTE0ODM1NDc0ODQxZmY2MjAzNjk4ZDViYTc5NzhkMjE0ZGYyMjkzIiwiY3VzdG9tZXJfaWQiOjE3MzQzMzUsImVtYWlsIjoiYm9zLnJvYmVydG9AeW1haWwuY29tIiwicCI6IjA3ODUyNTc5NjgiLCJwaXYiOjEsInZpZCI6MjUxMzA2OTcyNTA0NzkzOTU1NH0.D-hzghZ5kUr0OxCpFM6aoZVjsW1tInpX_ZuOdZljAW_itzPdOZvv-AlC1AyJt6pbXR1cZsxD7NYMxKzn56Vwyrfh01PdSbap8tWRU5utbic38s6X8tyxQwRIMY9BJ4WWcUZ9t0R2C61uzQ8BA7g5pm3y6QYXgRSxdy9iEAw3hhDUj5E_US2KLvc09XWrfzT4ytVu-WffIJDV-npVohS_a0MTiju79wo1bBnWdmZHwuM09TEETSmCwh-srC6yepZgtkfZ3-oHY8nb1D8seS-7Ge98ScyrrEKDhhquiJfWi9dIUiR-NifLRd-M0HBXSInVtMS6ps2gaFMedih5oZNjxA",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516537.539799,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EMAGUUID",
+      "value": "1746980537-1628524218-48174.005",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540537.53982,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_pdr_internal",
+      "value": "GA1.2.2575700739.1746980537",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540538.841648,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "site_version_11",
+      "value": "not_mobile",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1749572538.841676,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1458",
+      "value": "b",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.539852,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1477",
+      "value": "b",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.53986,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1478",
+      "value": "a",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.539866,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1483",
+      "value": "a",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.539872,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1486",
+      "value": "d",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.539878,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab1492",
+      "value": "b",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756537.539884,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "eab_allocation",
+      "value": "",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1746980598.841704,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "bEnaCvf5NtEzQ3sR2.5.L7PsI4jBNyQqiwXqr7lugwk-1746980538-1.0.1.1-FocJ_U..gjy8GNajRSjvgjZWSLh3kODI_oVhoh_2VKzreTMLMcnVNWU8.JOfI_uD2XoLTEBh8zQ.ctcm_Ug817hV_AxqCRTwMGPBRZ1QP0s",
+      "domain": ".onesignal.com",
+      "path": "/",
+      "expires": 1746982338.153278,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AID",
+      "value": "a6b351f70a11aae73c9a53da587e5d6b2bc2c71a7fe0fb5a295a31663d31ab4a",
+      "domain": "www.emag.ro",
+      "path": "/",
+      "expires": 1746997200,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sr",
+      "value": "1280x720",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516538,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "vp",
+      "value": "1280x720",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516538,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "gmsavings",
+      "value": "{\"v\":{\"v\":1,\"u\":1734335},\"t\":1746980538339,\"e\":\"1d\"}",
+      "domain": "www.emag.ro",
+      "path": "/",
+      "expires": 1778516538,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1599672211.1746980538",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1754756538,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__rtbh.lid",
+      "value": "%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22S7aBL3aQ6DJygG0bxeop%22%2C%22expiryDate%22%3A%222026-05-11T16%3A22%3A18.433Z%22%7D",
+      "domain": "www.emag.ro",
+      "path": "/",
+      "expires": 1778516538,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "web4_ga",
+      "value": "GA1.1.2575700739.1746980537",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540538.574608,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "web4_ga_JJCSV4C7C3",
+      "value": "GS2.1.s1746980526$o1$g1$t1746980538$j48$l0$h0",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540538.579547,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_pdr_session_id",
+      "value": "1746980526",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1746997200,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&b780ad40-903d-4132-87d0-bff744e350b1\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1778516539.683774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "li_gc",
+      "value": "MTswOzE3NDY5ODA1Mzg7MjswMjFd7cxddXN8Cw+EfBe2ZLZ14awvr/6HJ2iI3Z3wosJBYg==",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1762532539.683826,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=TGST06:s=T:r=T:a=T:p=T:g=3156:u=1:x=1:i=1746980538:t=1747066938:v=2:sig=AQHLAgxO09IrGYv9Gv35bQ740isC9NFb\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1747066939.683838,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "g",
+      "value": "MSESz2xxhvy001uLh1FH_1746980538633",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1778516538.713895,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "c",
+      "value": "MSESz2xxhvy001uLh1FH_TVsRmmCyMjf9yiQhLDzK_1746980538633",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1778516538.713935,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ts",
+      "value": "1746980538",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1778516538.713969,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=f2eee15ed55eca4f:T=1746980538:RT=1746980538:S=AA-Afja7bd_88G_k846gnsaRrQSk",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1762532538,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "FPID",
+      "value": "FPID2.2.zaMhwfnzuEWNlDTC5zmCixRsph9L3CLFVP1fTohmAbE%3D.1746980537",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1781540538.745204,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "FPLC",
+      "value": "K0FMZzJGHkrFHU7xY12ohF59d6ynSKlIMHVCbLXO1InUABen%2FYeG%2FiohIvtM6YWJZ701vxKMTbEvDPHdQFy6XkoRiTwNMJ52nD21aTmOLSxj9bwT3rRxAlv9pG6%2F9Q%3D%3D",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1747052538.745253,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ar_debug",
+      "value": "1",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1778516538.824037,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sapi-token",
+      "value": "eyJ1c2VyX2lkIjoiMjUxMzA2OTcyNTA0NzkzOTU1NCIsInVzZXJfa2V5IjoidzVzUllzT0ZaSG5DdWNLNnc1SENzSHhzSzBIQ2lzTzR3N1Vrd284YUZqQlJ3NFJld29uRGhzT1dEOEs2SXNLckZNT2R3cGpEb1c3Q2lzT2xEWDlNdzdIRHUyc1l3NGpDcE1LcndwekRqTU9Gd3JnOUk4S2J3N1wvQ2dSQUh3b3N3d3JadXc3ekN2TUtzd3FNQ3dwMGdOTU9oTmNLMnc3UENwREVmdzZVPSIsImxhbmdfY29kZV9rZXkiOiJ3NXNSWXNPRlpIbkN1Y0s2dzVIQ3NIeHNLMEhDaXNPNFo4S213b1hEaXNPNHc2MHh3NGZDcFhSQnc2WENrUWpEdU1Lenc3ckRuTUs0T01PSkowbkR2Y09zSmNPOHdxUTZ3NU5Fd3JMRHZrSXF3cm5EbThPWnc2akNyY09hSkVyQ21zT0d3cjBXdzdrbXc2a1R3cHJDa1FBbE9EWlB3ckViQlIxY3c3dz0iLCJhdXRoX3Rva2VuX2tleSI6Inc1c1JZc09GWkhuQ3VjSzZ3NUhDc0h4c0swSENpc080ZXNLcnc3b1dJTU9zVjhLeXc0TERtY0tkd3BwM2Q4T3N3cVlpd29ERHVGOUhIRmw0WHlnSHc2NDN3N0Fad3FiRHVNT2l3cEV3QzM0eXc1UmlieXpDczhLYU94dkRzZ2ZEbVI0dktsTEN1Y0trSjJZZXdvWkZmY0s4SmNPM3dxSERsY0s2QnNPSHc2aDd3b0hEcGx2RHUxckNwVXJEdE1PRXdyWERyRTlJR2lUQ3I4T0t3NFREa2NPbnc0TENvOE9Yd3FIQ3R6TnF3cGpEa2NPWVJNS00iLCJ1dWlkIjoiMTc0Njk4MDUzNy0xNjI4NTI0MjE4LTQ4MTc0LjAwNSJ9",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1778516538.841555,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_pdr_view_id",
+      "value": "1746980539-18749.056-1636598206",
+      "domain": ".emag.ro",
+      "path": "/",
+      "expires": 1746998538.841666,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "XANDR_PANID",
+      "value": "CKZzMO1N0icsU8EgL6-TFerkFrJoNK1A1lOkc4CZVdIQxzAFGmT4fZdpk8gDOHKIA5dajT0OB2go8pywFVaIkmAE-dzwAG60Je8460GWt50.",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1754756538.998139,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uuid2",
+      "value": "7256156566682369486",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1754756538.99819,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.emag.ro",
+      "localStorage": [
+        {
+          "name": "isPushNotificationsEnabled",
+          "value": "false"
+        },
+        {
+          "name": "__rtbh.lid",
+          "value": "{\"eventType\":\"lid\",\"id\":\"S7aBL3aQ6DJygG0bxeop\",\"expiryDate\":\"2026-05-11T16:22:18.433Z\"}"
+        },
+        {
+          "name": "isOptedOut",
+          "value": "false"
+        },
+        {
+          "name": "favorite_delivery_point",
+          "value": "2ca35e9c-469e-4dd1-81c2-2e5f836accbb"
+        },
+        {
+          "name": "os_pageViews",
+          "value": "1"
+        },
+        {
+          "name": "00D0Y000002IYwU_WEB_STORAGE",
+          "value": "{}"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1746980538376},\"expires\":1754756538376}}"
+        },
+        {
+          "name": "EMAGUUID",
+          "value": "1746980537-1628524218-48174.005"
+        }
+      ]
+    },
+    {
+      "origin": "https://emag.my.site.com",
+      "localStorage": [
+        {
+          "name": "00D0Y000002IYwU_WEB_STORAGE",
+          "value": "{}"
+        }
+      ]
+    }
+  ]
+}
