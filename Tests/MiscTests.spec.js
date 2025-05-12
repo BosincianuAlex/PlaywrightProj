@@ -1,6 +1,4 @@
 const {test,expect,request}= require ("@playwright/test")
-const {POManager} = require('../pageobjects/POManager.js')
-const {userLoginState} = require("../utils/utils.js")
 
 test("Block network request test", async({page}) => {
     //Block network request to check for pop up response
@@ -22,5 +20,12 @@ test("Block network request test", async({page}) => {
             }
     })
     
-    const responseBody = await response.json()    
+    const json = JSON.parse(JSON.stringify(response.headers()))
+    let token = json["set-cookie"].split(" ")
+    let userID= (token[0].match(/=(.*?);/)[1])
+    let ltuid= (token[10].match(/=(.*?);/)[1])
+    let SSID= (token[20].match(/=(.*?);/)[1])
+    console.log(userID+" " + ltuid + " " + SSID)
+
+    
  })
