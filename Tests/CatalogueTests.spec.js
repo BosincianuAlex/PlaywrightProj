@@ -18,10 +18,10 @@ test.describe("Products catalogue filter test ", async() => {
             await MainPage.searchBar.fill(`${data.product}`)
             await MainPage.searchButton.click()         
 
-            await Filter.setFilter(data.memory)       
-            await page.waitForTimeout(1000)        
+            await Filter.setFilter(data.memory)     
+                  
             await MainPage.listGridButton.click()   
-            await page.waitForTimeout(1000)
+            
             
             const count = await Catalogue.getItemsCount()
                         
