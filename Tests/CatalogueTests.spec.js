@@ -1,7 +1,6 @@
-const {test,expect}= require ("@playwright/test")
-const {POManager} = require('../pageobjects/POManager.js')
-const {userLoginState} = require("../utils/utils.js")
+const {expect}= require ("@playwright/test")
 const dataset = JSON.parse(JSON.stringify(require("../utils/TestData.json")))
+const { test } = require("../utils/utils")
 
 const url = "https:/www.emag.ro/";
 
@@ -12,24 +11,24 @@ test.beforeEach(async({page})=>{
 
 test.describe("Products catalogue filter test ", async() => {
     for(const data of dataset){
-        test(`with ${data.product}`, async({page})=>{
-            const {MainPage, Filter, Catalogue} = new POManager(page)            
+        test(`with ${data.product}`, async({mainPage,catalogue,filter,page})=>{                    
             
-            await MainPage.searchBar.fill(`${data.product}`)
-            await MainPage.searchButton.click()         
+            
+            await mainPage.searchBar.fill(`${data.product}`)
+            await mainPage.searchButton.click()         
 
-            await Filter.setFilter(data.memory)       
+            await filter.setFilter(data.memory)       
             await page.waitForTimeout(1000)        
-            await MainPage.listGridButton.click()   
+            await mainPage.listGridButton.click()   
             await page.waitForTimeout(1000)
             
-            const count = await Catalogue.getItemsCount()
+            const count = await catalogue.getItemsCount()
                         
             for(let i = 0 ; i < count; i++){            
                         
-                let value= await Catalogue.items.nth(i).locator('p:has-text(\"Capacitate memorie: \")').textContent()  
+                let value= await catalogue.items.nth(i).locator('p:has-text(\"Capacitate memorie: \")').textContent()  
                 value = value.replace("Capacitate memorie:  ", "")
-                expect(value, "at: " + await Catalogue.items.nth(i).locator(".card-v2-title").textContent()).toBe(data.memory)
+                expect(value, "at: " + await catalogue.items.nth(i).locator(".card-v2-title").textContent()).toBe(data.memory)
 
             }    
         })

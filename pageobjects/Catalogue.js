@@ -2,6 +2,7 @@ class Catalogue{
 
     constructor(page) {
         this.items = page.locator(".card-item:has(.row)")
+        
     }
 
     async getItemsCount() {
