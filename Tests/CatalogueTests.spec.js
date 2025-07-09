@@ -12,8 +12,7 @@ test.beforeEach(async({page})=>{
 test.describe("Products catalogue filter test ", async() => {
     for(const data of dataset){
         test(`with ${data.product}`, async({mainPage,catalogue,filter,page})=>{                    
-            
-            
+                        
             await mainPage.searchBar.fill(`${data.product}`)
             await mainPage.searchButton.click()         
 
