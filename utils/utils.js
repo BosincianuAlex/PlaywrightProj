@@ -1,5 +1,5 @@
-const {POManager} = require('../pageobjects/POManager.js')
-const {test:base} = require('@playwright/test')
+import { POManager } from '../pageobjects/POManager.js';
+import { test as base } from '@playwright/test';
 
 async function  userLoginState(browser) {
   // Simulate user login and save the storage state
@@ -30,7 +30,9 @@ async function  userLoginState(browser) {
         const {Catalogue} = new POManager(page)
         await use(Catalogue)
     }
+
+
 })
-module.exports = {userLoginState,test}
+export default {userLoginState,test}
 
 

@@ -6,4 +6,4 @@ class MainPage{
     }
 }
 
-module.exports = {MainPage}
+export {MainPage}

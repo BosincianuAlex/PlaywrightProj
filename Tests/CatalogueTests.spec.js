@@ -1,6 +1,6 @@
 const {expect}= require ("@playwright/test")
 const dataset = JSON.parse(JSON.stringify(require("../utils/TestData.json")))
-const { test } = require("../utils/utils")
+const { test } = require("../utils/utils").default
 
 const url = "https:/www.emag.ro/";
 
@@ -30,7 +30,8 @@ test.describe("Products catalogue filter test ", async() => {
                 value = value.replace("Capacitate memorie:  ", "")
                 expect(value, "at: " + await catalogue.items.nth(i).locator(".card-v2-title").textContent()).toBe(data.memory)
 
-            }    
+            }  
+              
         })
     }
 })
